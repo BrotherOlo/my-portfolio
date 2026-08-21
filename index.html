@@ -384,12 +384,12 @@ In my free time, I bake pastries and walk around San Francisco with an iced matc
 (function(){
   // ---- night sky: generate a field of twinkling stars ----
   var starsEl = document.getElementById('stars');
-  var STAR_COUNT = 140;
+  var STAR_COUNT = 180;
   var frag = document.createDocumentFragment();
   for(var i = 0; i < STAR_COUNT; i++){
     var star = document.createElement('span');
     star.className = 'star';
-    var size = (Math.random() * 1.6 + 0.6).toFixed(2); // 0.6px - 2.2px
+    var size = (Math.random() * 1.6 + 0.6).toFixed(2); // 1.0px - 2.8px
     var top = (Math.random() * 100).toFixed(2);
     var left = (Math.random() * 100).toFixed(2);
     var duration = (Math.random() * 3.5 + 2).toFixed(2); // 2s - 5.5s
